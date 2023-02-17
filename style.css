@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+.hello{
+    display: flex;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    /* background-image: repeating-linear-gradient(80deg,yellow,red ,green); */
+    background-image: repeating-radial-gradient(yellow,red,green);
+    animation : name  linear infinite 4s;
+}
+@keyframes name{
+    0%{
+        bottom: 0px; left: 0px;
+        transform: rotate(360deg);
+    }
+    25%{
+         bottom: 100vh; left: 0px;
+    }
+    50%{
+        bottom: 100vh; left:1250px;
+    }
+    75%{
+         left: 1250px; bottom: 0px;
+    }
+    100%{
+        left: 0px; bottom: 0px;
+    }
+}
